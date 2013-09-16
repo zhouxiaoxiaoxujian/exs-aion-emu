@@ -99,7 +99,7 @@
     	
     	<copy todir="${build.dist.gs}/config">
 			<fileset dir="config">
-				<include name="*.*"/>
+				<include name="**/*"/>
 			</fileset>
 		</copy>
     		

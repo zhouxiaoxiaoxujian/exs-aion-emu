@@ -1,0 +1,12 @@
+*/bin
+*/build
+*/config/myls.properties
+*/config/mygs.properties
+*/config/mycs.properties
+*/log
+*/target
+*/test-output
+*/cache
+AL-Game/data/geo/*
+*/nbactions.xml
+*/dist/StartGS-MY.bat

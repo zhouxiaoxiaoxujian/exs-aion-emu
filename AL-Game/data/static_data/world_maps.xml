@@ -99,6 +99,19 @@
 	<map id="301180000" name="Legion's Void Cube" instance="true" water_level="16" death_level="0" world_size="3072" flags="GLIDE FLY_RIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
 	<map id="301190000" name="Legion's Danuar Mysticarium" instance="true" water_level="16" death_level="0" world_size="768" flags="GLIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
 	<map id="301200000" name="Rukibuki's Big Tent Extravaganza" instance="true" water_level="20" death_level="0" world_size="3072" flags="GLIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
+	<map id="301210000" name="IDLDF5_Under_01_War" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301220000" name="IDF5_TD_War" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301230000" name="IDLDF5_Under_03" death_level="0" water_level="16" world_size="512" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301240000" name="IDAbRe_Up3_Dkisas_02" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301250000" name="IDAbRe_Up3_Lamiren_02" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301260000" name="IDAbRe_Up3_Crotan_02" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301270000" name="IDLDF4Re_01" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301280000" name="IDAbRe_Up3_Dkisas_02_N" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301290000" name="IDAbRe_Up3_Lamiren_02_N" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301300000" name="IDAbRe_Up3_Crotan_02_N" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301310000" name="IDLDF5_Fortress_Re" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301320000" name="IDLDF5_Under_01_PC" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="301330000" name="IDLDF5_Under_Rune_PC" death_level="0" water_level="16" world_size="512" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="310010000" name="Karamatis" beginner_twin_count="2" instance="true" death_level="0" water_level="16" world_size="1024" flags="RECALL GLIDE PVP DUEL_SAME_RACE"/>
 	<map id="310020000" name="Karamatis" instance="true" death_level="0" water_level="16" world_size="1024" flags="RECALL GLIDE PVP DUEL_SAME_RACE"/>
 	<map id="310030000" name="Aerdina" instance="true" death_level="0" water_level="16" world_size="1024" flags="RECALL PVP DUEL_SAME_RACE"/>
@@ -127,6 +140,11 @@
 	<map id="320140000" name="Ataxiar" instance="true" death_level="0" water_level="16" world_size="1024" flags="RECALL GLIDE PVP DUEL_SAME_RACE"/>
 	<map id="320150000" name="Padmarashka's Cave" instance="true" death_level="0" water_level="16" world_size="1024" flags="GLIDE PVP DUEL_SAME_RACE"/>
 	<map id="400010000" name="Reshanta" death_level="500" water_level="16" world_type="ABYSS" world_size="4096" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
+	<map id="400020000" name="Gab1_01" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="400030000" name="GAb1_Sub" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="400040000" name="Gab1_02" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="400050000" name="Gab1_03" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="400060000" name="Gab1_04" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="510010000" name="LF_Prison" death_level="0" water_level="16" prison="true" world_size="512" flags="BIND RECALL RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
 	<map id="520010000" name="DF_Prison" death_level="0" water_level="16" prison="true" world_size="512" flags="RECALL RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
 	<map id="600010000" name="Silentera Canyon" death_level="0" water_level="16" world_type="BALAUREA" world_size="1536" flags="RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
@@ -137,6 +155,8 @@
 	<map id="600060000" name="Danaria" water_level="25" death_level="0" world_type="BALAUREA" world_size="3072" flags="BIND RECALL GLIDE RIDE FLY_RIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
 	<map id="600070000" name="Idian Depths" water_level="16" death_level="0" world_type="BALAUREA" world_size="1536" flags="GLIDE RIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
 	<map id="600080000" name="Live Party Concert Hall" water_level="16" death_level="0" world_size="3072" flags="RECALL GLIDE RIDE FLY_RIDE PVP DUEL_SAME_RACE"/> <!-- New 4.3 NA -->
+	<map id="600090000" name="LDF5_Fortress" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="600100000" name="LDF4_Advance" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="700010000" name="Oriel" death_level="0" water_level="16" world_type="ELYSEA" world_size="3072" flags="RECALL GLIDE RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
 	<map id="700020000" name="Elysean Legion Housing" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/>
 	<map id="710010000" name="Pernon" death_level="0" water_level="16" world_type="ASMODAE" world_size="3072" flags="RECALL RIDE FLY_RIDE PVP DUEL_SAME_RACE"/>
@@ -148,4 +168,10 @@
 	<map id="900100000" name="Test_GiantMonster" death_level="0" water_level="16" world_size="1024" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/>
 	<map id="900110000" name="Housing_barrack" death_level="0" water_level="16" world_size="512" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/>
 	<map id="900120000" name="Test_IDArena" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/>
+  <map id="900130000" name="IDLDF5RE_test" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="900140000" name="Test_Kgw" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="900150000" name="Test_Basic_Mj" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="900170000" name="test_intro" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 KR -->
+	<map id="900180000" name="Test_server_art" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
+	<map id="900190000" name="Test_TagMatch" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 </world_maps>

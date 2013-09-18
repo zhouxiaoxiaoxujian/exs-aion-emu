@@ -151,29 +151,66 @@ public enum WorldMapType {
 	IDLDF5Re_03(300580000),
 	IDLDF5_Under_01(300590000),
 	IDRuneweapon(300800000),
-    IDRuneweapon_Q(300900000),
-    IDLDF5RE_solo_Q(301000000),
-    IDShulack_Rose_Solo_01(301010000),
-    IDShulack_Rose_Solo_02(301020000),
-    IDShulack_Rose_01(301030000),
-    IDShulack_Rose_02(301040000),
-    IDShulack_Rose_03(301050000),
-    IDLDF5_Under_Rune(301110000),
-    IDKamar(301120000),
-    IDVritra_Base(301130000),
-    IDLDF5_Under_02(301140000),
-    IDAsteria_IU_Party(301160000),
-    IDLDF5RE_02_L(301170000),
-    IDLDF5RE_03_L(301180000),
-    IDLDF5RE_Solo_L(301190000),
-    IDAsteria_IU_World(301200000),
+    	IDRuneweapon_Q(300900000),
+  	IDLDF5RE_solo_Q(301000000),
+  	IDShulack_Rose_Solo_01(301010000),
+    	IDShulack_Rose_Solo_02(301020000),
+    	IDShulack_Rose_01(301030000),
+    	IDShulack_Rose_02(301040000),
+    	IDShulack_Rose_03(301050000),
+    	IDLDF5_Under_Rune(301110000),
+    	IDKamar(301120000),
+    	IDVritra_Base(301130000),
+    	IDLDF5_Under_02(301140000),
+    	IDAsteria_IU_Party(301160000),
+    	IDLDF5RE_02_L(301170000),
+    	IDLDF5RE_03_L(301180000),
+    	IDLDF5RE_Solo_L(301190000),
+    	IDAsteria_IU_World(301200000),
     
 	// Maps 4.3 NA
-    NORHTERN_KATALAM(600050000),
-    SOUTHERN_KATALAM(600060000),
-    UNDERGROUND_KATALAM(600070000),
+    	NORHTERN_KATALAM(600050000),
+    	SOUTHERN_d(600060000),
+    	UNDERGROUND_KATALAM(600070000),
 	IDIU(600080000),
+
+	/**
+	 * exs-aion-emu 4.3
+	 * 
+	 * @author -Reverse-
+ 	*/
+
+	// Instances 4.5 
+	LDF5_Fortress(600090000), // Lack of data
+	LDF4_Advance(600100000),
+	IDLDF5_Under_01_War(301210000),
+	IDF5_TD_War(301220000),
+	IDLDF5_Under_03(301230000),
+	IDAbRe_Up3_Dkisas_02(301240000), // New 4.5 Abyss Dkisas
+	IDAbRe_Up3_Lamiren_02(301250000), // New 4.5 Abyss Lamiren
+	IDAbRe_Up3_Crotan_02(301260000), // New 4.5 Abyss Crotan
+	IDLDF4Re_01(301270000), // Lack of data
+	IDAbRe_Up3_Dkisas_02_N(301280000),
+	IDAbRe_Up3_Lamiren_02_N(301290000),
+	IDAbRe_Up3_Crotan_02_N(301300000),
+	IDLDF5_Fortress_Re(301310000), // Lack of data
+	IDLDF5_Under_01_PC(301320000),
+	IDLDF5_Under_Rune_PC(301330000),
 	
+	// Unknown Maps 4.5 // Lack of data
+	Gab1_01(400020000),
+	GAb1_Sub(400030000),
+	Gab1_02(400040000),
+	Gab1_03(400050000),
+	Gab1_04(400060000),
+
+	// Test Maps 4.5 KR // Lack of data
+	IDLDF5RE_test(900130000),
+	Test_Kgw(900140000),
+	Test_Basic_Mj(900150000),
+	test_intro(900170000),
+	Test_server_art(900180000),
+	Test_TagMatch(900190000),
 	
 	// Housing
 	ORIEL(700010000),

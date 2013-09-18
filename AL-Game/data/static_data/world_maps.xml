@@ -171,7 +171,7 @@
   <map id="900130000" name="IDLDF5RE_test" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="900140000" name="Test_Kgw" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="900150000" name="Test_Basic_Mj" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
-	<map id="900170000" name="test_intro" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 KR -->
+	<map id="900170000" name="test_intro" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="900180000" name="Test_server_art" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 	<map id="900190000" name="Test_TagMatch" death_level="0" water_level="16" world_size="3072" flags="BIND RECALL GLIDE FLY RIDE FLY_RIDE PVP DUEL_SAME_RACE DUEL_OTHER_RACE"/> <!-- New 4.5 -exs-aion-emu 4.3- -->
 </world_maps>

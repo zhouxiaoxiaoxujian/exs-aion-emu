@@ -37,6 +37,10 @@ public class GSConfig {
 	@Property(key = "gameserver.players.max.level", defaultValue = "65")
 	public static int PLAYER_MAX_LEVEL;
 	
+   /* server lang */
+	@Property(key = "gameserver.lang", defaultValue = "en")
+	public static String LANG;
+	
 	/* Time Zone name (used for events & timed spawns) */	
 	@Property(key = "gameserver.timezone", defaultValue = "")
 	public static String TIME_ZONE_ID = Calendar.getInstance().getTimeZone().getID();

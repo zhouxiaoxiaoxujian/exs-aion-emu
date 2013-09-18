@@ -17,6 +17,7 @@
 package com.aionemu.gameserver;
 
 import ch.lambdaj.Lambda;
+import com.aionemu.gameserver.utils.i18n.LanguageHandler;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
@@ -256,6 +257,7 @@ public class GameServer {
 		InstanceService.load();
 
 		FlyRingService.getInstance();
+		LanguageHandler.getInstance();
 		if (!GeoDataConfig.GEO_MATERIALS_ENABLE)
 			CuringZoneService.getInstance();
 		RoadService.getInstance();

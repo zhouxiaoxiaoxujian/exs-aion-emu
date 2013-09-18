@@ -56,10 +56,10 @@ public class ClassChangeService {
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 3398, 1006));
 							break;
 						case ENGINEER:
-							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 2035, 1006));
+							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 3825, 1006));
 							break;
 						case ARTIST:
-							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 2035, 1006));
+							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 4080, 1006));
 							break;
 					}
 				}
@@ -78,10 +78,10 @@ public class ClassChangeService {
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 4080, 2008));
 							break;
 						case ENGINEER:
-							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 2716, 2008));//sniffed on NA
+							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 3612, 2008));//sniffed on NA
 							break;
 						case ARTIST:
-							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 2716, 2008));//sniffed on NA
+							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(0, 3910, 2008));//sniffed on NA
 							break;
 					}
 				}

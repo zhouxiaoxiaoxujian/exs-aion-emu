@@ -1,0 +1,37 @@
+======================================
+TODO LIST
+===================================
+
+- Script all the 4.3 instances.
+
+- Fix spawns for sieges 4.0.
+
+- Complete the bases system.
+
+- parse 4.5 data (and 4.3 missing data)
+
+- fix some spawns (Z cordinates for some mobs in the air)
+
+- implement the idian depths
+
+- get the src code of d3d8thk.dll (with ip/domain bind)
+
+==========================================================
+
+about of 4.5 update:
+
+- crypt.java will be the same that 4.3
+
+- they will add a new system for abyss rank with sets that only a specific rank can be used (new abyss rank)
+
+- new class (robot) on aion 5.0 it will be like a futuristic game with spacial ships(? xDDD
+
+- new items,sets, etc.
+======================
+Devs on the project:
+
+- Greggianbayocboc
+- A7xatomic!
+- aion reverse
+- itonshappygame
+- refiloux

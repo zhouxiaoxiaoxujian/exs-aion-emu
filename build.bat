@@ -1,12 +1,12 @@
 @ECHO off
 SET MODE=clean package
 SET TITLE=Build
-TITLE Aion Lightning - %TITLE% Panel
+TITLE eXs Aion Emu - %TITLE% Panel
 :MENU
 CLS
 ECHO.
 ECHO   ^*--------------------------------------------------------------------------^*
-ECHO   ^|                    Aion Lightning Project - %TITLE% Panel                  ^|
+ECHO   ^|                        eXs Aion Emu - %TITLE% Panel                      ^|
 ECHO   ^*--------------------------------------------------------------------------^*
 ECHO   ^|                                                                          ^|
 ECHO   ^|    1 - Build Login server                           6 - Build mode       ^|
@@ -21,21 +21,21 @@ ECHO.
 SET /P OPTION=Type your option and press ENTER: 
 IF %OPTION% == 1 (
 CLS
-TITLE Aion Lightning - %TITLE%ing Login server
+TITLE eXs Aion Emu - %TITLE%ing Login server
 CD AL-Login
 call mvn %MODE%
 pause
 )
 IF %OPTION% == 2 (
 CLS
-TITLE Aion Lightning - %TITLE%ing Game Server
+TITLE eXs Aion Emu - %TITLE%ing Game Server
 CD AL-Game
 call mvn %MODE%
 pause
 )
 IF %OPTION% == 3 (
 CLS
-TITLE Aion Lightning - %TITLE%ing Chat Server
+TITLE eXs Aion Emu - %TITLE%ing Chat Server
 CD AL-Chat
 call mvn %MODE%
 pause
@@ -49,7 +49,7 @@ pause
 )
 IF %OPTION% == 5 (
 CLS
-TITLE Aion Lightning - %TITLE%ing All Project
+TITLE eXs Aion Emu - %TITLE%ing All Project
 CD AL-Login
 call mvn %MODE%
 CD ../AL-Game
@@ -67,10 +67,10 @@ IF %OPTION% == 7 (
 CLS
 SET MODE=clean install
 SET TITLE=Install
-TITLE Aion Lightning - Install Panel
+TITLE eXs Aion Emu - Install Panel
 ECHO.
 ECHO   ^*--------------------------------------------------------------------------^*
-ECHO   ^|                    Aion Lightning Project - Install Panel                ^|
+ECHO   ^|                         eXs Aion Emu - Install Panel                     ^|
 ECHO   ^*--------------------------------------------------------------------------^*
 ECHO   ^|                                                                          ^|
 ECHO   ^|    1 - Install Login server                        6 - Build mode        ^|
@@ -87,10 +87,10 @@ IF %OPTION% == 8 (
 CLS
 SET MODE=clean package -e -X
 SET TITLE=Debug
-TITLE Aion Lightning - Debug Panel
+TITLE eXs Aion Emu - Debug Panel
 ECHO.
 ECHO   ^*--------------------------------------------------------------------------^*
-ECHO   ^|                    Aion Lightning Project - Debug Panel                  ^|
+ECHO   ^|                         eXs Aion Emu - Debug Panel                       ^|
 ECHO   ^*--------------------------------------------------------------------------^*
 ECHO   ^|                                                                          ^|
 ECHO   ^|    1 - Debug Login server                          6 - Build mode        ^|

@@ -16,6 +16,14 @@ TODO LIST
 
 - get the src code of d3d8thk.dll (with ip/domain bind)
 
+- Stigma slot open error
+
+- Two-Handed Error Main/Sub
+
+- Enchantment (0/20) ~ (0/30) See an error
+
+- Gunner - Reload / SM_SKILL_COODOWN Not working
+
 ==========================================================
 
 about of 4.5 update:

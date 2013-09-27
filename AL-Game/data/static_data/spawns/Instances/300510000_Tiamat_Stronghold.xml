@@ -2,7 +2,7 @@
 <spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<spawn_map map_id="300510000">
 		<!-- 2nd Gate Summoned Pet -->
-		<spawn npc_id="219422">
+		<spawn npc_id="219374">
 			<spot x="920.58" y="1069.0" z="495.62192" walker_id="8CB3EB6F69C0ADB12B827CE4470BF52627B85B90"/>
 			<spot x="949.2693" y="1086.1416" z="495.3840" h="90"/>
 			<spot x="953.23" y="1060.37" z="495.62122" h="60" walker_id="D4D5A15C1F7E2564990C486C4DF59D3C6F87D7D4" walker_index="1"/>
@@ -11,21 +11,21 @@
 			<spot x="1095.9150" y="1232.2438" z="495.2704" h="90"/>
 		</spawn>
 		<!-- 2nd Gate Summoned Pet -->
-		<spawn npc_id="219423">
+		<spawn npc_id="219375">
 			<spot x="1069.0236" y="1209.1133" z="495.2704"/>
 			<spot x="1070.1682" y="943.9033" z="495.0851"/>
 			<spot x="1080.73" y="960.03" z="495.34256" h="88" walker_id="C6A309D758EF684CC76E46712D6014A5E95BEF67"/>
 			<spot x="1087.73" y="896.9" z="495.3205" h="31" walker_id="13C74FD18112651C7F64B12E3F4C593F1CDB338B" walker_index="1"/>
 		</spawn>
 		<!-- 3rd Gate Summoned Pet -->
-		<spawn npc_id="219425">
+		<spawn npc_id="219377">
 			<spot x="956.4491" y="1051.3767" z="497.18158" h="31"/>
 			<spot x="1083.39" y="1238.39" z="495.4717" h="93" walker_id="43419608916D160DED56AC3758ED92D79C7FF5C4"/>
 			<spot x="1087.53" y="1177.91" z="495.50967" h="35" walker_id="6A2113EE8F93F16F972D126D93784DF8561ABF6F" walker_index="1"/>
 			<spot x="1101.7384" y="926.94714" z="497.18158" h="61"/>
 		</spawn>
 		<!-- 3rd Gate Summoned Pet -->
-		<spawn npc_id="219424">
+		<spawn npc_id="219406">
 			<spot x="929.2145" y="1054.7976" z="495.3840"/>
 			<spot x="929.2145" y="1082.5005" z="495.3840"/>
 			<spot x="1075.9360" y="902.4455" z="495.0851" h="30"/>
@@ -33,11 +33,11 @@
 			<spot x="1100.4038" y="1198.5027" z="495.2715" h="60"/>
 		</spawn>
 		<!-- 4th Battalion Gladiator -->
-		<spawn npc_id="283572">
+		<spawn npc_id="230104">
 			<spot x="1589.6422" y="1068.77" z="494.87134"/>
 		</spawn>
 		<!-- 4th Gate Summoned Pet -->
-		<spawn npc_id="219426">
+		<spawn npc_id="283122">
 			<spot x="920.58" y="1069.0" z="495.62192" walker_id="8CB3EB6F69C0ADB12B827CE4470BF52627B85B90"/>
 			<spot x="953.23" y="1060.37" z="495.62122" h="60" walker_id="D4D5A15C1F7E2564990C486C4DF59D3C6F87D7D4" walker_index="1"/>
 			<spot x="1080.73" y="960.03" z="495.34256" h="88" walker_id="C6A309D758EF684CC76E46712D6014A5E95BEF67"/>
@@ -46,7 +46,7 @@
 			<spot x="1087.73" y="896.9" z="495.3205" h="31" walker_id="13C74FD18112651C7F64B12E3F4C593F1CDB338B" walker_index="1"/>
 		</spawn>
 		<!-- 4th Gate Summoned Pet -->
-		<spawn npc_id="219427">
+		<spawn npc_id="219379">
 			<spot x="1074.21" y="842.28" z="495.0493" walker_id="C744E810CE6BC052439FAEE215B723507E4EF9B1"/>
 			<spot x="1074.3159" y="668.15717" z="443"/>
 			<spot x="1076.7484" y="771.12439" z="497.39438" h="31"/>
@@ -56,31 +56,31 @@
 			<spot x="1095.6788" y="771.12439" z="497.39438" h="31"/>
 		</spawn>
 		<!-- 5th Gate Summoned Pet -->
-		<spawn npc_id="219428">
+		<spawn npc_id="219380">
 			<spot x="994.5377" y="615.0870" z="447.5031" h="117"/>
 			<spot x="997.8315" y="572.6244" z="447.5032" h="15"/>
 			<spot x="1004.6700" y="615.9210" z="439.9286" h="103"/>
 			<spot x="1004.9213" y="575.6196" z="439.9287" h="16"/>
 		</spawn>
 		<!-- 5th Gate Summoned Pet -->
-		<spawn npc_id="219429">
+		<spawn npc_id="219381">
 			<spot x="1064.957" y="590.10516" z="442.69217"/>
 			<spot x="1064.957" y="601.59686" z="442.69217"/>
 		</spawn>
 		<!-- Anuhart Elite Assault Commander -->
-		<spawn npc_id="219403">
+		<spawn npc_id="219355">
 			<spot x="867.24609" y="1319.7948" z="399.26215" h="61"/>
 		</spawn>
 		<!-- Anuhart Elite Colonel -->
-		<spawn npc_id="219402">
+		<spawn npc_id="283109">
 			<spot x="1030.0316" y="301.83109" z="409.08" h="31"/>
 		</spawn>
 		<!-- Anuhart Elite Fleshender -->
-		<spawn npc_id="219401">
+		<spawn npc_id="219353">
 			<spot x="1031.0326" y="469.86285" z="444" h="31"/>
 		</spawn>
 		<!-- Anuhart Elite Recon Officer -->
-		<spawn npc_id="219400">
+		<spawn npc_id="219352">
 			<spot x="1216.66" y="1069.27" z="498.59897"/>
 		</spawn>
 		<!-- Arcane Support -->

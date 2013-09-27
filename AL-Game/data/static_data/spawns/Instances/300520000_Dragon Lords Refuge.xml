@@ -2,7 +2,7 @@
 <spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<spawn_map map_id="300520000">
 		<!-- Confused Miner -->
-		<spawn npc_id="219415">
+		<spawn npc_id="219367">
 			<spot x="196.53738" y="854.4979" z="246.07117" h="105"/>
 		</spawn>
 		<!-- Internal Passage -->
@@ -26,23 +26,23 @@
 			<spot x="496.42648" y="516.493" z="240.26653"/>
 		</spawn>
 		<!-- Professor Hewahewa -->
-		<spawn npc_id="219408">
+		<spawn npc_id="219360">
 			<spot x="451.9700" y="514.5500" z="417.4044"/>
 		</spawn>
 		<!-- Protectorate Elite Surgeon -->
-		<spawn npc_id="219407">
+		<spawn npc_id="219359">
 			<spot x="485.8271" y="514.5500" z="417.4044"/>
 		</spawn>
 		<!-- Protectorate Strike Team Reserves -->
-		<spawn npc_id="219413">
+		<spawn npc_id="219365">
 			<spot x="193.11104" y="173.50334" z="246.07117" h="15"/>
 		</spawn>
 		<!-- Protectorate Strike Team Reserves -->
-		<spawn npc_id="219414">
+		<spawn npc_id="219366">
 			<spot x="805.052" y="170.7381" z="246.07117" h="40"/>
 		</spawn>
 		<!-- Sick Manduri -->
-		<spawn npc_id="219416">
+		<spawn npc_id="219368">
 			<spot x="801.7295" y="851.3593" z="246.07117" h="75"/>
 		</spawn>
 		<!-- Siel's Relics -->

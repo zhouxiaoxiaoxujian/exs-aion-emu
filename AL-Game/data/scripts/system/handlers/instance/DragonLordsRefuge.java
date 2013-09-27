@@ -31,13 +31,11 @@ import com.aionemu.gameserver.skillengine.SkillEngine;
 import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
 import com.aionemu.gameserver.world.WorldMapInstance;
+import com.aionemu.gameserver.world.WorldMapType;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * @author Bobobear
- * @modified Luzien
- */
+
 @InstanceID(300520000)
 public class DragonLordsRefuge extends GeneralInstanceHandler {
 
@@ -56,51 +54,51 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 	  int npcId = npc.getNpcId();
 
 	  switch (npcId) {
-		 case 219413: //fissurefang
-			despawnNpc(219413); //despawn fissurefang corpse
-			performSkillToTarget(219409, 219409, 20979); //remove Fissure Buff
+		 case 219365: //fissurefang
+			despawnNpc(219365); //despawn fissurefang corpse
+			performSkillToTarget(219361, 219361, 20979); //remove Fissure Buff
 			sendMsg(1401533);
 			checkIncarnationKills();
 			break;
-		 case 219414: //graviwing
-			despawnNpc(219414); //despawn graviwing corpse
-			performSkillToTarget(219409, 219409, 20981); //remove Gravity Buff
+		 case 219366: //graviwing
+			despawnNpc(219366); //despawn graviwing corpse
+			performSkillToTarget(219361, 219361, 20981); //remove Gravity Buff
 			sendMsg(1401535);
 			checkIncarnationKills();
 			break;
-		 case 219415: //wrathclaw
-			despawnNpc(219415); //despawn wrathclaw corpse
-			performSkillToTarget(219409, 219409, 20980); //remove Wrath Buff
+		 case 219367: //wrathclaw
+			despawnNpc(219367); //despawn wrathclaw corpse
+			performSkillToTarget(219361, 219361, 20980); //remove Wrath Buff
 			sendMsg(1401534);
 			checkIncarnationKills();
 			break;
-		 case 219416: //petriscale
-			despawnNpc(219416); //despawn petriscale corpse
-			performSkillToTarget(219409, 219409, 20982); //remove Petrification Buff 
+		 case 219368: //petriscale
+			despawnNpc(219368); //despawn petriscale corpse
+			performSkillToTarget(219361, 219361, 20982); //remove Petrification Buff 
 			sendMsg(1401536);
 			checkIncarnationKills();
 			break;
 		 case 730695:
-			instance.getNpc(219407).getEffectController().removeEffect(20590);
+			instance.getNpc(219359).getEffectController().removeEffect(20590);
 			break;
 		 case 730696:
-			instance.getNpc(219407).getEffectController().removeEffect(20591);
+			instance.getNpc(219359).getEffectController().removeEffect(20591);
 			break;
-		 case 219407: //Calindi Flamelord
+		 case 219359: //Calindi Flamelord
 			despawnNpc(730694); //despawn tiamat aetheric field
 			despawnNpc(730695); //despawn Surkanas if spawned
 			despawnNpc(730696); //despawn Surkanas if spawned
-			performSkillToTarget(219408, 219408, 20919); //Transformation
+			performSkillToTarget(219360, 219360, 20919); //Transformation
 			ThreadPoolManager.getInstance().schedule(new Runnable() {
 			   @Override
 			   public void run() {
-				  despawnNpc(219408); //despawn tiamat woman (1st spawn)
-				  spawn(219409, 466.7468f, 514.5500f, 417.4044f, (byte) 0);//tiamat dragon 2nd Spawn
-				  performSkillToTarget(219409, 219409, 20975); //Fissure Buff
-				  performSkillToTarget(219409, 219409, 20976); //Wrath Buff
-				  performSkillToTarget(219409, 219409, 20977); //Gravity Buff
-				  performSkillToTarget(219409, 219409, 20978); //Petrification Buff
-				  performSkillToTarget(219409, 219409, 20984); //Unbreakable Wing (reflect)
+				  despawnNpc(219360); //despawn tiamat woman (1st spawn)
+				  spawn(219361, 466.7468f, 514.5500f, 417.4044f, (byte) 0);//tiamat dragon 2nd Spawn
+				  performSkillToTarget(219361, 219361, 20975); //Fissure Buff
+				  performSkillToTarget(219361, 219361, 20976); //Wrath Buff
+				  performSkillToTarget(219361, 219361, 20977); //Gravity Buff
+				  performSkillToTarget(219361, 219361, 20978); //Petrification Buff
+				  performSkillToTarget(219361, 219361, 20984); //Unbreakable Wing (reflect)
 			   }
 			}, 5000);
 
@@ -108,7 +106,7 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 			ThreadPoolManager.getInstance().schedule(new Runnable() {
 			   @Override
 			   public void run() {
-				  performSkillToTarget(219409, 219409, 20920);
+				  performSkillToTarget(219361, 219361, 20920);
 			   }
 			}, 8000);
 
@@ -116,7 +114,7 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 			ThreadPoolManager.getInstance().schedule(new Runnable() {
 			   @Override
 			   public void run() {
-				  spawn((instanceRace == Race.ELYOS ? 219564 : 219567), 504f, 515f, 417.405f, (byte) 60);
+				  spawn((instanceRace == Race.ELYOS ? 219488 : 219491), 504f, 515f, 417.405f, (byte) 60);
 			   }
 			}, 15000);
 
@@ -133,7 +131,7 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 			   }
 			}, 40000);
 			break;
-		 case 219410: //Tiamat Dragon (3rd spawn)
+		 case 219362: //Tiamat Dragon (3rd spawn)
 			if (failTask != null && !failTask.isDone())
 			   failTask.cancel(true);
 			spawn(701542, 480f, 514f, 417.405f, (byte) 0);//tiamat treasure chest reward
@@ -159,20 +157,20 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 			healEmpyreanLord(3);
 			spawn(730673, 459.548f, 456.849f, 417.405f, (byte) 78);
 			break;
-		 case 219409: // Tiamat Dragon (1st spawn) - Players cannot kill tiamat, they must kill 4 incanation before
+		 case 219361: // Tiamat Dragon (1st spawn) - Players cannot kill tiamat, they must kill 4 incanation before
 			//TODO: what to do?
 			break;
-		 case 219564: // Kaisinel Gods (1st Spawn)
-		 case 219567: // Marchutan Gods (1st Spawn)
+		 case 219488: // Kaisinel Gods (1st Spawn)
+		 case 219491: // Marchutan Gods (1st Spawn)
 			sendMsg(1401542);
-			Npc tiamat = getNpc(219409);
+			Npc tiamat = getNpc(219361);
 			tiamat.getController().useSkill(20983);
 			ThreadPoolManager.getInstance().schedule(new Runnable() {
 			   @Override
 			   public void run() {
-				  despawnNpc(219409);//despawn tiamat dragon
+				  despawnNpc(219361);//despawn tiamat dragon
 				  spawn(730694, 436.7526f, 513.8103f, 420.6662f, (byte) 0, 14); //re-spawn tiamat aetheric field
-				  spawn(219408, 451.9700f, 514.5500f, 417.4044f, (byte) 0); //re-spawn tiamat woman to initial position
+				  spawn(219360, 451.9700f, 514.5500f, 417.4044f, (byte) 0); //re-spawn tiamat woman to initial position
 				  sendMsg(1401563);//broadcast message of instance failed
 				  spawn(730630, 548.18683f, 514.54523f, 420f, (byte) 0, 23); //spawn exit
 			   }
@@ -210,10 +208,10 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 	  failTask = ThreadPoolManager.getInstance().schedule(new Runnable() {
 		 @Override
 		 public void run() {
-			if (isSpawned(219410)) {
-			   despawnNpc(219410); //despawn tiamat dragon
+			if (isSpawned(219362)) {
+			   despawnNpc(219362); //despawn tiamat dragon
 			   spawn(730694, 436.7526f, 513.8103f, 420.6662f, (byte) 0, 14); //re-spawn tiamat aetheric field
-			   spawn(219408, 451.9700f, 514.5500f, 417.4044f, (byte) 0); //re-spawn tiamat woman to initial position
+			   spawn(219360, 451.9700f, 514.5500f, 417.4044f, (byte) 0); //re-spawn tiamat woman to initial position
 			   sendMsg(1401563); //broadcast message of instance failed
 			   spawn(730630, 548.18683f, 514.54523f, 420f, (byte) 0, 23); //spawn exit
 			}
@@ -222,7 +220,7 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
    }
 
    private void healEmpyreanLord(int id) {
-	  int npcId = instanceRace == Race.ELYOS ? 219564 : 219567;
+	  int npcId = instanceRace == Race.ELYOS ? 219488 : 219491;
 	  int skill = 20993 + id;
 	  Npc npc = instance.getNpc(npcId);
 	  if (npc != null && !NpcActions.isAlreadyDead(npc)) {
@@ -234,11 +232,11 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
    private void checkIncarnationKills() {
 	  killedCount = specNpcKilled.incrementAndGet();
 	  if (killedCount == 4) {
-		 if (!isSpawned(219409)) {
+		 if (!isSpawned(219361)) {
 			return;
 		 }
-		 Npc npc = getNpc(219409);
-		 final int npcId = instanceRace == Race.ELYOS ? 219564 : 219567;
+		 Npc npc = getNpc(219361);
+		 final int npcId = instanceRace == Race.ELYOS ? 219488 : 219491;
 		 final int msg = instanceRace == Race.ELYOS ? 1401540 : 1401541;
 		 npc.getEffectController().removeEffect(20984);// dispel Unbreakable Wing (reflect)
 		 sendMsg(1401537);
@@ -259,13 +257,13 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 				  if (isSpawned(npcId + 1)) {
 					 spawn(283331, 461f, 514f, 417.405f, (byte) 0);
 					 spawn(283328, 461f, 514f, 417.405f, (byte) 0);
-					 spawn(219410, 461f, 514f, 417.405f, (byte) 0);
+					 spawn(219362, 461f, 514f, 417.405f, (byte) 0);
 					 ThreadPoolManager.getInstance().schedule(new Runnable() {
 						@Override
 						public void run() {
 						   despawnNpc(283328);
 						   despawnNpc(283331);
-						   despawnNpc(219409);
+						   despawnNpc(219361);
 						   sendMsg(msg);
 						   ThreadPoolManager.getInstance().schedule(new Runnable() {
 							  @Override
@@ -308,6 +306,13 @@ public class DragonLordsRefuge extends GeneralInstanceHandler {
 	  }
    }
 
+     @Override
+    public void onPlayerLogOut(Player player) {
+		if (player.getRace() == Race.ELYOS)
+		TeleportService2.teleportTo(player, 110010000, 1322, 1511, 568);
+		if (player.getRace() == Race.ASMODIANS)
+		TeleportService2.teleportTo(player, 120010000, 1679, 1400, 195);
+    }
    @Override
    public void onExitInstance(Player player) {
 	  TeleportService2.moveToInstanceExit(player, mapId, player.getRace());

@@ -38,8 +38,8 @@ public class PetriscaleAI2 extends AggressiveNpcAI2 {
 	}
 	
 	private boolean isDeadGod() {
-		Npc marcutan = getNpc(219567);
-		Npc kaisinel = getNpc(219564);
+		Npc marcutan = getNpc(219491);
+		Npc kaisinel = getNpc(219488);
 		if (isDead(marcutan) || isDead(kaisinel)) {
 			AI2Actions.useSkill(this, 20983);
 			return true;

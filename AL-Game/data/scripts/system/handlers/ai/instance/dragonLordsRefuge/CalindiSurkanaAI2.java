@@ -42,7 +42,7 @@ public class CalindiSurkanaAI2 extends NpcAI2 {
 	@Override
 	protected void handleSpawned() {
 		super.handleSpawned();
-		calindi = getPosition().getWorldMapInstance().getNpc(219407);
+		calindi = getPosition().getWorldMapInstance().getNpc(219359);
 		reflect();
 	}
 	

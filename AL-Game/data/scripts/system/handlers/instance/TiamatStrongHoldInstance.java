@@ -18,6 +18,9 @@ package instance;
 
 import java.util.Map;
 
+import com.aionemu.gameserver.model.Race;
+import com.aionemu.gameserver.services.teleport.TeleportService2;
+import com.aionemu.gameserver.world.WorldMapType;
 import com.aionemu.commons.network.util.ThreadPoolManager;
 import com.aionemu.commons.utils.Rnd;
 import com.aionemu.gameserver.ai2.AIState;
@@ -40,7 +43,7 @@ import com.aionemu.gameserver.world.zone.ZoneName;
 
 /**
  * @author Cheatkiller
- *
+ * UPDATE TO 4.0 NA
  */
 @InstanceID(300510000)
 public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
@@ -59,51 +62,51 @@ public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
 			case 730612:
 				firstWave();
 				break;
-			case 219421:
-			case 219417:
-			case 219459:
-			case 219418:
+			case 219373:
+			case 219369:
+			case 219411:
+			case 219370:
 				drakans++;
 				if (drakans == 5)
 				  secondWave();
 				else if (drakans == 12)
 				   thirdWave();
 				break;
-			case 219400:
+			case 219352:
 				sendMsg(1401614);
-				spawn(283913, 1175.65f, 1069.08f, 498.52f, (byte) 0);
+				spawn(283089, 1175.65f, 1069.08f, 498.52f, (byte) 0);
 				spawn(701501, 1075.4409f, 1078.5071f, 787.685f, (byte) 16);
 				doors.get(48).setOpen(true);
 				spawnKahrun();
 				break;
-			case 219405:
+			case 219357:
 				sendMsg(1401614);
 				spawn(701501, 1077.1716f, 1058.1995f, 787.685f, (byte) 61);
 				doors.get(37).setOpen(true);
 				isDeadBosses();
 				break;
-			case 219406:
+			case 219358:
 				sendMsg(1401614);
 				spawn(701541, 677.35785f, 1069.5361f, 499.86716f, (byte) 0);
 				spawn(701527, 1073.948f, 1068.8732f, 787.685f, (byte) 61);
 				spawn(730622, 652.4821f, 1069.0302f, 498.7787f, (byte) 0, 82);
-				spawn(283916, 679.88f, 1068.88f, 504.2f, (byte) 119);
+				spawn(283089, 679.88f, 1068.88f, 504.2f, (byte) 119);
 				isDeadBosses();
 				break;
-			case 219401:
+			case 219353:
 				sendMsg(1401614);
 				spawn(701501, 1071.5909f, 1040.6797f, 787.685f, (byte) 23);
 				doors.get(711).setOpen(true);
 				isDeadBosses();
 				break;
-			case 219402:
+			case 219354:
 				sendMsg(1401614);
-				spawn(283914, 1030.03f, 301.83f, 411f, (byte) 26);
+				spawn(283089, 1030.03f, 301.83f, 411f, (byte) 26);
 				spawn(701501, 1086.274f, 1098.3997f, 787.685f, (byte) 90);
 				spawn(730622, 1029.792f, 267.0502f, 409.7982f, (byte) 0, 83);
 				isDeadBosses();
 				break;
-			case 219403:
+			case 219355:
 				sendMsg(1401614);
 				spawn(701501, 1063.5973f, 1092.7402f, 787.685f, (byte) 107);
 				doors.get(51).setOpen(true);
@@ -113,12 +116,12 @@ public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
 				doors.get(79).setOpen(true);
 				isDeadBosses();
 				break;
-			case 219404:
+			case 219356:
 				sendMsg(1401614);
 				spawn(701501, 1099.8691f, 1047.1895f, 787.685f, (byte) 64);
 				spawn(730622, 644.4221f, 1319.6221f, 488.7422f, (byte) 0, 15);
 				spawn(800438, 665.63409f, 1319.7051f, 487.9f, (byte) 61);
-				spawn(283915, 629.1f, 1319.5f, 501.2f, (byte) 0);
+				spawn(283089, 629.1f, 1319.5f, 501.2f, (byte) 0);
 				isDeadBosses();
 				break;
 		}
@@ -129,33 +132,33 @@ public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
 
 			@Override
 			public void run() {
-		    attackPlayer((Npc)spawn(219421, 1505.09f, 1068.54f, 491.38f, (byte) 0));
-		    attackPlayer((Npc)spawn(219417, 1510.54f, 1058.04f, 491.5f, (byte) 0));
-		    attackPlayer((Npc)spawn(219459, 1517.38f, 1063.5f, 491.52f, (byte) 0));
-		    attackPlayer((Npc)spawn(219459, 1516.81f, 1073.6f, 491.52f, (byte) 0));
-		    attackPlayer((Npc)spawn(219417, 1510.41f, 1078.8f, 491.52f, (byte) 0));
+		    attackPlayer((Npc)spawn(219373, 1505.09f, 1068.54f, 491.38f, (byte) 0));
+		    attackPlayer((Npc)spawn(219369, 1510.54f, 1058.04f, 491.5f, (byte) 0));
+		    attackPlayer((Npc)spawn(219363, 1517.38f, 1063.5f, 491.52f, (byte) 0));
+		    attackPlayer((Npc)spawn(219363, 1516.81f, 1073.6f, 491.52f, (byte) 0));
+		    attackPlayer((Npc)spawn(219369, 1510.41f, 1078.8f, 491.52f, (byte) 0));
 			}
 		}, 5000);
 	}
 	
 	private void secondWave() {
 		attackPlayer((Npc)spawn(219418, 1426.08f, 1068.41f, 491.38f, (byte) 0));
-		attackPlayer((Npc)spawn(219417, 1430.3f, 1061.13f, 491.5f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1428.5f, 1056.6f, 491.52f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1439.49f, 1058.5f, 491.4f, (byte) 0));
-		attackPlayer((Npc)spawn(219417, 1430.3f, 1075.49f, 491.52f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1439.4f, 1078.6f, 491.4f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1428.5f, 1080.9f, 491.46f, (byte) 0));
+		attackPlayer((Npc)spawn(219369, 1430.3f, 1061.13f, 491.5f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1428.5f, 1056.6f, 491.52f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1439.49f, 1058.5f, 491.4f, (byte) 0));
+		attackPlayer((Npc)spawn(219369, 1430.3f, 1075.49f, 491.52f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1439.4f, 1078.6f, 491.4f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1428.5f, 1080.9f, 491.46f, (byte) 0));
 	}
 	
 	private void thirdWave() {
 		attackPlayer((Npc)spawn(219418, 1296.1f, 1068.3f, 491.38f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1290.9f, 1059.13f, 491.5f, (byte) 0));
-		attackPlayer((Npc)spawn(219417, 1300.6f, 1056.4f, 491.52f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1302.78f, 1053.55f, 491.4f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1290.94f, 1077.8f, 491.52f, (byte) 0));
-		attackPlayer((Npc)spawn(219417, 1300.6f, 1080.3f, 491.4f, (byte) 0));
-		attackPlayer((Npc)spawn(219459, 1302.78f, 1082.8f, 491.5f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1290.9f, 1059.13f, 491.5f, (byte) 0));
+		attackPlayer((Npc)spawn(219369, 1300.6f, 1056.4f, 491.52f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1302.78f, 1053.55f, 491.4f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1290.94f, 1077.8f, 491.52f, (byte) 0));
+		attackPlayer((Npc)spawn(219369, 1300.6f, 1080.3f, 491.4f, (byte) 0));
+		attackPlayer((Npc)spawn(219363, 1302.78f, 1082.8f, 491.5f, (byte) 0));
 	}
 
 	private void attackPlayer(final Npc npc) {
@@ -227,40 +230,40 @@ public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
 		int rand = Rnd.get(0,3);
 		switch (rand) {
 			case 0:
-				spawn(219412, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
-				spawn(219443, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
-				spawn(219443, 893.3f, 1190.71f, 495.6f, (byte) 30);
-				spawn(219443, 762.6f, 1192.1f, 495.6f, (byte) 30);
+				spawn(219364, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
+				spawn(219363, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
+				spawn(219363, 893.3f, 1190.71f, 495.6f, (byte) 30);
+				spawn(219363, 762.6f, 1192.1f, 495.6f, (byte) 30);
 				break;
 			case 1:
-				spawn(219443, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
-				spawn(219412, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
-				spawn(219443, 893.3f, 1190.71f, 495.6f, (byte) 30);
-				spawn(219443, 762.6f, 1192.1f, 495.6f, (byte) 30);
+				spawn(219363, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
+				spawn(219364, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
+				spawn(219363, 893.3f, 1190.71f, 495.6f, (byte) 30);
+				spawn(219363, 762.6f, 1192.1f, 495.6f, (byte) 30);
 				break;
 			case 2:
-				spawn(219443, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
-				spawn(219443, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
-				spawn(219412, 893.3f, 1190.71f, 495.6f, (byte) 30);
-				spawn(219443, 762.6f, 1192.1f, 495.6f, (byte) 30);
+				spawn(219363, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
+				spawn(219363, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
+				spawn(219364, 893.3f, 1190.71f, 495.6f, (byte) 30);
+				spawn(219363, 762.6f, 1192.1f, 495.6f, (byte) 30);
 				break;
 			case 3:
-				spawn(219443, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
-				spawn(219443, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
-				spawn(219443, 893.3f, 1190.71f, 495.6f, (byte) 30);
-				spawn(219412, 762.6f, 1192.1f, 495.6f, (byte) 30);
+				spawn(219363, 763.4179f, 1445.6504f, 495.6519f, (byte) 90);
+				spawn(219363, 893.7009f, 1445.4846f, 495.6421f, (byte) 90);
+				spawn(219363, 893.3f, 1190.71f, 495.6f, (byte) 30);
+				spawn(219364, 762.6f, 1192.1f, 495.6f, (byte) 30);
 				break;
 		}
 	}
 	
 	private boolean isDeadBosses() {
-		Npc boss = getNpc(219400);
-		Npc boss1 = getNpc(219401);
-		Npc boss2 = getNpc(219402);
-		Npc boss3 = getNpc(219403);
-		Npc boss4 = getNpc(219404);
-		Npc boss5 = getNpc(219405);
-		Npc boss6 = getNpc(219406);
+		Npc boss = getNpc(219352);
+		Npc boss1 = getNpc(219357);
+		Npc boss2 = getNpc(219358);
+		Npc boss3 = getNpc(219353);
+		Npc boss4 = getNpc(219354);
+		Npc boss5 = getNpc(219355);
+		Npc boss6 = getNpc(219356);
 		if (isDead(boss) && isDead(boss1) && isDead(boss2) && isDead(boss3)
 			&& isDead(boss4) && isDead(boss5) && isDead(boss6)) {
 			spawn(800464, 1119.7076f, 1071.1401f, 496.8615f, (byte) 119);
@@ -317,7 +320,15 @@ public class TiamatStrongHoldInstance extends GeneralInstanceHandler {
 		isInstanceDestroyed = true;
 		doors.clear();
 	}
-	
+    @Override
+    public void onPlayerLogOut(Player player) {
+		if (player.getRace() == Race.ELYOS)
+		TeleportService2.teleportTo(player, 110010000, 1322, 1511, 568);
+        //removeEffects(player);
+		if (player.getRace() == Race.ASMODIANS)
+		TeleportService2.teleportTo(player, 120010000, 1679, 1400, 195);
+        //removeEffects(player);
+    }
 	@Override
 	public boolean onDie(final Player player, Creature lastAttacker) {
 		PacketSendUtility.broadcastPacket(player, new SM_EMOTION(player, EmotionType.DIE, 0,

@@ -36,7 +36,7 @@ public class FirstTiamatAI2 extends AggressiveNpcAI2 {
 	@Override
 	protected void handleSpawned() {
 	   super.handleSpawned();
-	   if (getNpcId() == 219408)
+	   if (getNpcId() == 219360)
 		  AI2Actions.useSkill(this, 20917);
 	}
 }

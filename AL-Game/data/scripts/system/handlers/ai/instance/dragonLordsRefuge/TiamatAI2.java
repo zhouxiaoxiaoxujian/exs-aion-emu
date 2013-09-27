@@ -182,15 +182,6 @@ public class TiamatAI2 extends AggressiveNpcAI2 {
 			case 1:
 				spawn(284116, 457.8000f, 514.6000f, 417.4000f, (byte) 0);
 				spawn(284116, 462.3000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 469.7000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 466.6000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 473.6000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 479.3000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 475.8000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 491.2000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 482.7000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 485.2000f, 514.6000f, 417.4000f, (byte) 0);
-				spawn(284116, 488.1000f, 514.6000f, 417.4000f, (byte) 0);
 				break;
 		}
 	}
@@ -216,9 +207,6 @@ public class TiamatAI2 extends AggressiveNpcAI2 {
 					cancelTasks();
 				else {
 					spawn(283333, 464.24f, 462.26f, 417.4f, (byte) 18);
-					spawn(283333, 542.79f, 465.03f, 417.4f, (byte) 43);
-					spawn(283333, 541.79f, 563.71f, 417.4f, (byte) 74);
-					spawn(283333, 465.79f, 565.43f, 417.4f, (byte) 100);
 				}
 			}
 		}, 70000, 40000);
@@ -226,14 +214,10 @@ public class TiamatAI2 extends AggressiveNpcAI2 {
 
 	private void spawnGravityCrusher() {
 		spawn(283335, 464.24f, 462.26f, 417.4f, (byte) 18);
-		spawn(283335, 542.79f, 465.03f, 417.4f, (byte) 43);
-		spawn(283335, 541.79f, 563.71f, 417.4f, (byte) 74);
-		spawn(283335, 465.79f, 565.43f, 417.4f, (byte) 100);
 	}
 
 	private void spawnInfinitePain() {
 		spawn(283337, 508.32f, 515.18f, 417.4f, (byte) 0);
-		spawn(283338, 508.32f, 515.18f, 417.4f, (byte) 0);
 	}
 
 	private void addPercent() {

@@ -211,4 +211,31 @@ public class BinaryClass extends BaseFileObject {
 		return Kind.CLASS;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.sun.tools.javac.file.BaseFileObject#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.sun.tools.javac.file.BaseFileObject#getShortName()
+	 */
+	@Override
+	public String getShortName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.sun.tools.javac.file.BaseFileObject#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

@@ -1,8 +1,8 @@
 package com.aionemu.commons.services;
 
 import com.aionemu.commons.services.cron.CurrentThreadRunnableRunner;
-import org.apache.commons.lang.mutable.MutableBoolean;
-import org.apache.commons.lang.mutable.MutableInt;
+import org.apache.commons.lang3.mutable.MutableBoolean;
+import org.apache.commons.lang3.mutable.MutableInt;
 import org.quartz.JobDetail;
 import org.quartz.Trigger;
 import org.testng.Assert;

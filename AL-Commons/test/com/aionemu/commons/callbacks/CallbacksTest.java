@@ -2,7 +2,7 @@ package com.aionemu.commons.callbacks;
 
 import com.aionemu.commons.callbacks.files.*;
 import com.aionemu.commons.callbacks.util.GlobalCallbackHelper;
-import org.apache.commons.lang.mutable.MutableBoolean;
+import org.apache.commons.lang3.mutable.MutableBoolean;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

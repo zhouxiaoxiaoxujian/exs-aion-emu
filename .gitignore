@@ -10,3 +10,4 @@
 AL-Game/data/geo/*
 */nbactions.xml
 */dist/StartGS-MY.bat
+*.class

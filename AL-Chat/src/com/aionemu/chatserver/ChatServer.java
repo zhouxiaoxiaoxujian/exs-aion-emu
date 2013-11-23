@@ -47,12 +47,12 @@ import org.slf4j.Logger;
  * @author ATracer, KID, nrg
  */
 public class ChatServer {
-    
+
 	/**
 	 * Logger for this class.
 	 */
 	private static final Logger log = LoggerFactory.getLogger(ChatServer.class);
-        
+
 	private static void initalizeLoggger() {
 		new File("./log/backup/").mkdirs();
 		File[] files = new File("log").listFiles(new FilenameFilter() {
@@ -100,7 +100,7 @@ public class ChatServer {
 	 */
 	public static void main(String[] args) {
 		long start = System.currentTimeMillis();
-            
+
 		initalizeLoggger();
 
 		Config.load();
@@ -110,8 +110,8 @@ public class ChatServer {
 		BroadcastService.getInstance();
 		ChatService.getInstance();
 		NettyServer.getInstance();
-                RestartService.getInstance();
-                
+		RestartService.getInstance();
+
 		Runtime.getRuntime().addShutdownHook(ShutdownHook.getInstance());
 		log.info("AL Chat Server started in " + (System.currentTimeMillis() - start) / 1000 + " seconds.");
 	}

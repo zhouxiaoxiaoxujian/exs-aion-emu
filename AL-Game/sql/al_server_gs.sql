@@ -1,3 +1,5 @@
+CREATE SCHEMA IF NOT EXISTS `al_server_gs`;
+USE `al_server_gs`;
 -- ----------------------------
 -- Table structure for `server_variables`
 -- ----------------------------

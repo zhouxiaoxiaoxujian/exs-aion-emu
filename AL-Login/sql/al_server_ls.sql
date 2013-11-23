@@ -1,3 +1,4 @@
+CREATE SCHEMA IF NOT EXISTS `al_server_ls` DEFAULT CHARSET=utf8;
 -- ----------------------------
 -- account_data
 -- ----------------------------
@@ -17,6 +18,10 @@ CREATE TABLE `account_data` (
   `ip_force` varchar(20) DEFAULT NULL,
   `expire` date DEFAULT NULL,
   `toll` bigint(13) NOT NULL DEFAULT '0',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `question` varchar(50) NOT NULL DEFAULT '',
+  `answer` varchar(50) NOT NULL DEFAULT '',
+  `balance` FLOAT NOT NULL DEFAULT 0.0,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -79,6 +84,7 @@ CREATE TABLE `gameservers` (
 -- ----------------------------
 -- Table structure for `banned_mac`
 -- ----------------------------
+DROP TABLE IF EXISTS `banned_mac`;
 CREATE TABLE IF NOT EXISTS `banned_mac` (
   `uniId` int(10) NOT NULL AUTO_INCREMENT,
   `address` varchar(20) NOT NULL,
@@ -90,6 +96,7 @@ CREATE TABLE IF NOT EXISTS `banned_mac` (
 -- ----------------------------
 -- Table structure for `player_transfers`
 -- ----------------------------
+DROP TABLE IF EXISTS `player_transfers`;
 CREATE TABLE `player_transfers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `source_server` tinyint(3) NOT NULL,
@@ -102,5 +109,15 @@ CREATE TABLE `player_transfers` (
   `time_performed` varchar(100) DEFAULT NULL,
   `time_done` varchar(100) DEFAULT NULL,
   `comment` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `tasks`;
+CREATE TABLE `tasks` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `task_type` enum('SHUTDOWN','RESTART','CLEAN_ACCOUNTS') NOT NULL,
+  `trigger_type` enum('FIXED_IN_TIME','AFTER_RESTART') NOT NULL,
+  `exec_param` text,
+  `trigger_param` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

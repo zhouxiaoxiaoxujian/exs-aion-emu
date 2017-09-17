@@ -1,0 +1,1 @@
+INSERT INTO al_server_ls.gameservers (mask, password) VALUES ('*', '12345');

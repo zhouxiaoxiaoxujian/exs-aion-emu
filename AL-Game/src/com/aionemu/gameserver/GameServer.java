@@ -353,8 +353,8 @@ public class GameServer {
 		Thread.setDefaultUncaughtExceptionHandler(new ThreadUncaughtExceptionHandler());
 
 		// make sure that callback code was initialized
-		if (JavaAgentUtils.isConfigured())
-			log.info("JavaAgent [Callback Support] is configured.");
+//		if (JavaAgentUtils.isConfigured())
+//			log.info("JavaAgent [Callback Support] is configured.");
 
 		// Initialize cron service
 		CronService.initSingleton(ThreadPoolManagerRunnableRunner.class);

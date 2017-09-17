@@ -24,7 +24,7 @@
 	Examples: <ipconfig default="google.com">
 -->
 
-<ipconfig default="192.168.1.147">
+<ipconfig default="127.0.0.1">
 	<iprange min="10.0.0.0" max="10.255.255.255" address="10.0.0.0"/>
 	<iprange min="172.16.0.0" max="172.31.255.255" address="172.16.0.0"/>
 	<iprange min="192.168.0.0" max="192.168.255.255" address="192.168.1.147"/>

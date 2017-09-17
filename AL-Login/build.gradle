@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+repositories {
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+}
+
+mainClassName = "com.aionemu.loginserver.LoginServer"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(":AL-Commons")
+}

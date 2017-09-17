@@ -98,7 +98,7 @@
     	
     	<copy todir="Login/config">
 			<fileset dir="config">
-				<include name="*.*"/>
+				<include name="**/*"/>
 			</fileset>
 		</copy>
     		
@@ -113,7 +113,6 @@
                 <include name="**/*"/>
             </fileset>
         </copy>
-
-		<zip destfile="Login/NG-Login.zip" basedir="Login" />
+		<tar compression="gzip" destfile="Login/NG-Login.tar.gz" basedir="Login"/>
 	</target>
 </project>

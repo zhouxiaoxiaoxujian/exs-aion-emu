@@ -259,14 +259,14 @@ public class Base<BL extends BaseLocation> {
 
 	protected void addBossListeners() {
 		AbstractAI ai = (AbstractAI) getBoss().getAi2();
-		EnhancedObject eo = (EnhancedObject) ai;
-		eo.addCallback(getBossListener());
+//		EnhancedObject eo = (EnhancedObject) ai;
+//		eo.addCallback(getBossListener());
 	}
 
 	protected void rmvBossListener() {
 		AbstractAI ai = (AbstractAI) getBoss().getAi2();
-		EnhancedObject eo = (EnhancedObject) ai;
-		eo.removeCallback(getBossListener());
+//		EnhancedObject eo = (EnhancedObject) ai;
+//		eo.removeCallback(getBossListener());
 	}
 
 	public Npc getFlag() {
